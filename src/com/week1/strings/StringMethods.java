@@ -40,7 +40,6 @@ public class StringMethods {
         System.out.println(str2.trim());
 
         //ChAR
-
         System.out.println(str2.charAt(6));
     }
 }

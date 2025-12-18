@@ -25,9 +25,6 @@ public class StringIntern {
 
         System.out.println(name2 == name3);
 
-
-
-
     }
 
 }

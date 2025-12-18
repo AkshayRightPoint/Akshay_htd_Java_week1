@@ -23,7 +23,5 @@ public class StringOperators {
         StringBuffer sb = new StringBuffer("Hello");
         System.out.println(s.contentEquals(sb)); //Compare with StringBuffer / Builder
 
-
-
     }
 }
