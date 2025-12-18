@@ -1,4 +1,4 @@
-package objectOrientedPrograming.polymorphisms;
+package com.week1.oops.polymorphism;
 
 /** Polymorphism means having differnt form.
  * can be achived using method overlaoding -> Complie time
@@ -16,6 +16,11 @@ package objectOrientedPrograming.polymorphisms;
     private void beat(String belt, String scold){
         System.out.println("Dad is beating with" +belt + "and Scolding " +scold);
     }
+
+    public void beat(int days, float marks){
+        System.out.println("Dad kept on beating his child for " +days + " days, for scoring " +marks + " CGPA");
+    }
+
 }
 
   class Child extends Parent{
@@ -34,11 +39,20 @@ package objectOrientedPrograming.polymorphisms;
 
       } */
 
+      @Override
+      public void beat(int days, float marks){
+          System.out.println("Students dad is calm now and asked to study continues " +
+                  days + " days, and set a goal to score CGPA " + marks );
+      }
+
       public static void main(String[] args) {
           Parent parent = new Parent();
           Child child = new Child();
           parent.beat();
           parent.beat("belt");
           child.beat("stick");
+
+          parent.beat(3, 4.0f);
+          child.beat(30, 7.0f);
       }
 }

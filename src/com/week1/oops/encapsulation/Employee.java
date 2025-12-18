@@ -1,4 +1,4 @@
-package objectOrientedPrograming.encapsulations;
+package com.week1.oops.encapsulation;
 
 /** Process of wrapping up of data and Methods to a single unit is called Encapsulation
  * Basic here in the class the data is hidden from accessing by different class

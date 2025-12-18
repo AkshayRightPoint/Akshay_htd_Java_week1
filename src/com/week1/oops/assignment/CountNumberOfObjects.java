@@ -1,4 +1,4 @@
-package objectOrientedPrograming.assignment;
+package com.week1.oops.assignment;
 
 public class CountNumberOfObjects {
     static int countObject = 0;

@@ -1,4 +1,4 @@
-package objectOrientedPrograming.Inheritances;
+package com.week1.oops.Inheritance;
 
 /** Inheritating or using the property of parents (super class ) into child classes
  *  this can we achived using extend keyword

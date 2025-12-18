@@ -1,4 +1,4 @@
-package objectOrientedPrograming.abstractions;
+package com.week1.oops.abstraction;
 
 public class Car implements Vehicle {
     @Override
