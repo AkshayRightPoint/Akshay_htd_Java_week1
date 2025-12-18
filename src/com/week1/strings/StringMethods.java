@@ -1,4 +1,4 @@
-package com.week1.oops.strings;
+package com.week1.strings;
 
 import java.util.Arrays;
 

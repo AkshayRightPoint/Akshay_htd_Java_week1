@@ -1,9 +1,9 @@
-package com.week1.oops.strings;
+package com.week1.strings;
 
 /** String is a sequence of character, it's immutable in nature.
  * Strings use Heap area with string constant pool for storing the data and getter management...
  */
-public class StringPracticeCode {
+public class StringPractice {
     // Ways to create a String
     String str = "Akshay";
     String str2 = new String("Raj");

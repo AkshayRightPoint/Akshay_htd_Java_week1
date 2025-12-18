@@ -1,4 +1,4 @@
-package com.week1.oops.strings;
+package com.week1.strings;
 
 public class StringOperators {
     public static void main(String[] args) {
