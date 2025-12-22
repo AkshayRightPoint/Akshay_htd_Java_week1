@@ -2,18 +2,25 @@ package com.week1.assignment;
 
 public class ReverseString {
     public static void main(String[] args) {
-        String str = "s@$s%g^a"; // ->  output: a@$g%s^s
-        //Way 1
-        for(int i=str.length()-1; i>=0; i--){
-            char reverse = str.charAt(i);
-            System.out.print(reverse);
+        String reverse = "s@$s%g^a"; // ->  output: a@$g%s^s
+        char[] reverseCharacter = reverse.toCharArray();
+        int left =0; int right = reverseCharacter.length-1;
+
+        while (left<right){
+            if(!Character.isLetter(reverseCharacter[left])){
+                left++;
+            }else if(!Character.isLetter(reverseCharacter[right])){
+                right--;
+            }else {
+                char temp = reverseCharacter[left];
+                reverseCharacter[left] = reverseCharacter[right];
+                reverseCharacter[right] = temp;
+                left++;
+                right--;
+            }
+
         }
-//way2
-        String br = new StringBuffer(str).reverse().toString();
-        System.out.println("  ");
-        System.out.println(br);
-
-
+        System.out.println(new String(reverseCharacter));
 
     }
 }
