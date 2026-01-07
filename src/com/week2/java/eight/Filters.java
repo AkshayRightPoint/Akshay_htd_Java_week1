@@ -30,5 +30,6 @@ public class Filters{
 //                .forEach(System.out::println);
 
         System.out.println( Stream.of(2,4,1,0,3).collect(Collectors.toSet()) );
+
     }
 }
