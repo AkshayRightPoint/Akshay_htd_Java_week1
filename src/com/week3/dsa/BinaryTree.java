@@ -28,7 +28,15 @@ public class BinaryTree {
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         Node root = buildTree(nodes);
-        System.out.println(root.data);
+
+        System.out.print("Preorder  : ");
+        preOrder(root);
+
+        System.out.print("Inorder   : ");
+        inOrder(root);
+
+        System.out.print("Postorder : ");
+        postOrder(root);
     }
 
     public static void preOrder(Node root){
@@ -36,7 +44,7 @@ public class BinaryTree {
             System.out.println(-1 + " ");
             return;
         }
-        System.out.println(root.data + " ");
+        System.out.print(root.data + " ");
         preOrder(root.left);
         preOrder(root.right);
     }
@@ -47,7 +55,7 @@ public class BinaryTree {
             return;
         }
         inOrder(root.left);
-        System.out.println(root.data+" ");
+        System.out.print(root.data+" ");
         inOrder(root.right);
     }
 
@@ -58,6 +66,6 @@ public class BinaryTree {
         }
         postOrder(root.left);
         postOrder(root.right);
-        System.out.println(root.data+" ");
+        System.out.print(root.data+" ");
     }
 }
