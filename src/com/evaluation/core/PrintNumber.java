@@ -6,8 +6,8 @@ public class PrintNumber {
 
     public static void main(String[] args) {
        PrintNumber thread = new PrintNumber();
-        Thread odd = new Thread(thread::printOddEven);
-        odd.start();
+        Thread oddOrEven = new Thread(thread::printOddEven);
+        oddOrEven.start();
     }
 
 //    Thread t = new Thread( {
